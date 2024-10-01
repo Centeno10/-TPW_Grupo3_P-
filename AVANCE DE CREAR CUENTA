@@ -1,1 +1,43 @@
-
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una nueva cuenta</title>
+    <link rel="stylesheet" href="styles_crearcuenta.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>Crear una nueva cuenta</h1>
+        <form>
+            <div class="name-fields">
+                <div class="field">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="field">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                </div>
+            </div>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    He leído y acepto los <a href="#">Términos del servicio</a> y la <a href="#">Política de Privacidad del Cliente</a>.
+                </label>
+            </div>
+            
+            <button type="submit" class="register-btn">Registrarse</button>
+        </form>
+        
+        <a href="inicio_sesion.html" class="login-link">Ya tengo una cuenta</a>
+    </div>
+</body>
+</html>
